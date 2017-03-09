@@ -17,6 +17,6 @@ def index():
     
     return "Registration is complete <a href='/'>back</a>"
   else:
-    return render_template("newForm.html"	registrations=list1)
+    return render_template("newForm.html",registrations=list1)
 if __name__== "__main__":
   app.run(port=8000,debug=True)
