@@ -3,10 +3,13 @@
 <textarea  name="message" maxlength="1000" cols="25" rows="6"></textarea>
  <button type="submit">Send </button>
 </form> 
-<hr><ul>   {% for message in  %}
-      
-      <li>         name : {{ message.name }} <br>         message : {{ message1.message }}
-      </li>      <hr>
+<hr><ul>   
+  {% for message in  %} 
+      <li>
+       name : {{ message.name }} <br>         
+       message : {{ message1.message }}
+      </li>      
+<hr>
    {% endfor %}
 </ul>
 </body>
